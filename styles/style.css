@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300;1,600&family=Ubuntu:ital,wght@1,300&display=swap');
+
+:root{
+    --cor-um: #222831;
+    --cor-dois: #00ADB5;
+    --cor-tres: blueviolet;
+    --cor-quatro: whitesmoke;
+    --cor-cinco: #272727;
+    --cor-seis: #282A3A;
+
+    --fonte-primaria:'Roboto Mono', monospace ;
+    --fonte-secundaria:'Ubuntu', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-um);
+    color: var(--cor-dois); 
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho_menu_link{
+    font-family:var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--cor-tres);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_conteudo_titulo{
+    font-size: 2.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-tres);
+}
+
+.apresentacao_conteudo_paragrafo{
+    font-size: 1.25rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.subtitulo_links{
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.apresentacao_links_botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 5px groove var(--cor-tres);
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--cor-quatro);
+}
+
+.apresentacao_links_botao:hover{
+    background-color: var(--cor-cinco);
+}
+
+.apresenacao_imagem{
+    width: 50%;
+}
+
+.rodape{
+    padding: 25px;
+    color: var(--cor-dois);
+    background-color: var(--cor-seis);
+    text-align: center;
+    font-family:var(--fonte-primaria);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+   .cabecalho{
+    padding: 10%;
+   }
+
+   .cabecalho_menu{
+    justify-content: center;
+   }
+   
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+    }
+}
